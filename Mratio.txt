@@ -1,0 +1,15 @@
+#M-ratio and Effective M-ratio
+
+stack=float(input("Stack: "))
+sb=float(input("Small Blind: "))
+bb=float(input("Big Blind: "))
+Santes=float(input("Antes Sum: "))
+
+players=int(input("Current Players Number:"))
+Splayers=int(input("Players Number Sum: "))
+
+M=stack/(sb+bb+Santes)
+Me=M*(players/Splayers)
+
+print("M-ratio: "+ str(round(M, 2)))
+print("Effective M-ratio: "+ str(round(Me, 2)))

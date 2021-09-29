@@ -1,0 +1,16 @@
+#Win Percentage
+
+TOTAL_CARDS=52
+PLAYER_CARDS=2
+
+n_cards=int(input("Draw Pool Number: ")) #cards needed
+do:
+	cards_bf=int(input("Cards Before You Fold: ")) 
+	while(cards_bf!=1 || cards_bf!=2)
+	
+if(cards_bf==1):
+	win_p=(n-cards/(TOTAL_CARDS-PLAYER_CARDS))*2
+else:
+	win_p=(n-cards/(TOTAL_CARDS-PLAYER_CARDS))*4
+
+print("Win Percentage: " + str(round(win_p, 2)))

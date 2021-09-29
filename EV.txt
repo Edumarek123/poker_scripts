@@ -1,0 +1,10 @@
+#Expected Value
+
+win_p=float(input("Win Percentage: "))
+lose_p=100-win_p
+win_amt=float(input("Win Amount: "))
+lose_amt=float(input("Lose Amount: "))
+
+EV=(win_p*win_amt)-(lose_p*lose_amt)
+
+print("Expected Value: " + str(round(EV, 2)))
